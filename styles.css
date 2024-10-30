@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans";
+}
+body{
+    margin:0 auto;
+ }
+ /* global css */
+ .object-width{
+    margin: auto;
+    max-width: 1200px;
+ }
+ /* navigation */
+nav{
+    padding: 1.5rem;
+    background-color: green;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 8px gray;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.serchsection{
+    display: flex;
+    flex-direction: row;
+    
+    gap: 15px;
+}
+#serch-text{
+    padding: 8px;
+    width: 250px;
+    max-width:400px;
+    font-size: 24;
+    color: black;
+    background-color: aliceblue;
+    border: none;
+}
+button{
+    padding: 8px 15px;
+    text-align: center;
+    background-color: aliceblue;
+    color: black;
+    font-size: 24;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+/* body section */
+#blog-section{
+        
+        padding: 2rem;
+        display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Space between cards */
+}
+@media (max-width: 768px) {
+    #blog-section {
+      grid-template-columns: 1fr; /* Single column on mobile */
+    }
+  }
+.blog{
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.blog img{
+    object-fit: contain;
+    width: 100%;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+
+}
+.title{
+    padding: 1.2rem;
+    gap: 10px;
+}
